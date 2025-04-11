@@ -1,0 +1,122 @@
+@use 'mixins/mixins' as *;
+@use 'common/var' as *;
+.c-table {
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .pagination-view {
+    font-size: 14px;
+    color: rgba(#000, 0.9);
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f0f0;
+  }
+  .el-table {
+    .el-table__header .el-table__cell .cell {
+      border-right: 1px solid #ccc !important;
+      margin-left: 1px;
+    }
+    .grey-cell {
+      background-color: #f0f0f0 !important;
+      color: #515a6e;
+    }
+  }
+  .el-table--border .el-table__cell {
+    border-right: none !important;
+  }
+  .cell-setting {
+    display: flex;
+    align-items: center;
+  }
+  .c-table-setting--label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+  }
+}
+.m-t-8px {
+  margin-top: 8px;
+}
+
+.c-table-filter-panel {
+  display: inline-flex;
+  align-items: center;
+  &.filter-active {
+    color: getCssVar('color-primary');
+    .filter-icon svg path {
+      fill: getCssVar('color-primary');
+    }
+  }
+  .filter-icon {
+    padding-left: 6px;
+    display: flex;
+    cursor: pointer;
+  }
+}
+.c-table-setting__alert.el-alert--info.is-light {
+  background-color: #e8f0ff;
+  color: #333;
+  .el-icon {
+    color: getCssVar('color-primary');
+    font-size: 20px;
+  }
+}
+.c-table-setting__drag-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  .column-name {
+    padding-left: 10px;
+    margin-right: auto;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .btn {
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      color: var(getCssVar('color-primary'));
+    }
+  }
+  .drag-icon {
+    cursor: move;
+  }
+}
+.c-table-setting__scroll-list {
+  height: 300px;
+  margin: 16px -16px;
+  padding: 0 16px;
+}
+
+.c-table-popper {
+  .el-checkbox-group {
+    .el-checkbox {
+      display: flex;
+      border-radius: 4px;
+      padding: 0 10px;
+      margin-right: 0;
+      &.is-checked {
+        background-color: #e1e9fa;
+      }
+    }
+  }
+  .filter-wrapper {
+    margin: -12px -12px 0 -12px;
+    padding: 8px;
+  }
+  .footer {
+    text-align: right;
+    margin: 0 -12px -12px;
+    padding: 8px;
+    border-top: 1px solid #ccc;
+  }
+}
