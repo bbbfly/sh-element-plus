@@ -34,7 +34,7 @@ const currentLink = computed(() => {
     <div class="header-container">
       <div class="logo-container">
         <a :href="currentLink">
-          <img class="logo" src="/images/element-plus-logo.svg" alt="Element Plus Logo" />
+          <img class="logo" src="/images/element-plus-logo.png" alt="Element Plus Logo" />
         </a>
       </div>
       <div class="content">
@@ -56,7 +56,7 @@ const currentLink = computed(() => {
   height: var(--header-height);
 
   >a {
-    height: 28px;
+    height: 40px;
     width: 128px;
   }
 
