@@ -107,6 +107,7 @@ declare module 'vue' {
     ElSegmented: typeof import('element-plus')['ElSegmented']
     ElMention: typeof import('element-plus')['ElMention']
     ElCTable: typeof import('element-plus')['ElCTable']
+    ElShForm: typeof import('element-plus')['ElShForm']
   }
 
   interface ComponentCustomProperties {

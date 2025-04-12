@@ -76,6 +76,7 @@ export * from './anchor'
 export * from './segmented'
 export * from './mention'
 export * from './c-table'
+export * from './sh-form'
 
 // plugins
 export * from './infinite-scroll'
