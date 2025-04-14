@@ -6,4 +6,5 @@ export const ElShForm: SFCWithInstall<typeof ShForm> = withInstall(ShForm)
 export default ElShForm
 
 export * from './src/sh-form'
+export * from './src/types'
 export type { ShFormInstance } from './src/instance'

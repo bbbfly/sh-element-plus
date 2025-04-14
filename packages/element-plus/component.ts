@@ -109,10 +109,12 @@ import { ElAnchor, ElAnchorLink } from '@element-plus/components/anchor'
 import { ElSegmented } from '@element-plus/components/segmented'
 import { ElMention } from '@element-plus/components/mention'
 import { ElCTable } from '@element-plus/components/c-table'
+import { ElShForm } from '@element-plus/components/sh-form'
 
 import type { Plugin } from 'vue'
 
 export default [
+  ElShForm,
   ElCTable,
   ElAffix,
   ElAlert,
